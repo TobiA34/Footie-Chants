@@ -17,9 +17,9 @@ class Manager {
     let name: String
     let job: JobType
  
-    let managerID: PremierLeagueManagerType
+    let managerID: ManagerType
     
-    internal init(name: String, job: JobType, managerID: PremierLeagueManagerType) {
+    internal init(name: String, job: JobType, managerID: ManagerType) {
         self.name = name
         self.job = job
         self.managerID = managerID
