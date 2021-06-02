@@ -17,7 +17,10 @@ struct League {
  
 
 struct Image {
-    static let football = UIImage(named:"Football")
+    static let premierLeague = UIImage(named:"Premier-league")
+    static let laLiga = UIImage(named:"LaLiga")
+    static let ligue1 = UIImage(named:"Ligue1")
+    static let serieA = UIImage(named:"Serie-A")
 
 }
 

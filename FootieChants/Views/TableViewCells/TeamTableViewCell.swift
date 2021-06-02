@@ -1,5 +1,5 @@
 //
-//  PemierLeaugeTeamTableViewCell.swift
+//  TeamTableViewCell.swift
 //  FootieChants
 //
 //  Created by tobi adegoroye on 23/05/2021.

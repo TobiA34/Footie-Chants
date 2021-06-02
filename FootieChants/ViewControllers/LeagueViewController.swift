@@ -36,13 +36,15 @@
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let league = leagueViewModel.leagues[indexPath.row]
-        
+        let vc =  TeamsViewController(team: league.teams,leagueViewModel: leagueViewModel)
+        vc.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(vc, animated: true)
         
         
         print("Selected: \(league)")
         
     }
-    
+ 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return leagueViewModel.leagues.count
     }
@@ -50,7 +52,7 @@
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let club = leagueViewModel.leagues[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LeagueCollectionViewCell.cellID, for: indexPath) as! LeagueCollectionViewCell
-        cell.configure(league: club,delegate: self)
+        cell.configure(league: club)
         return cell
     }
     
@@ -59,7 +61,7 @@
         super.viewDidLoad()
         
         collectionView.backgroundColor = Colour.background
-        navigationItem.title = "Leauges"
+        navigationItem.title = "Leagues"
         
         collectionView.register(LeagueCollectionViewCell.self, forCellWithReuseIdentifier: LeagueCollectionViewCell.cellID)
         collectionView.dataSource = self
@@ -67,19 +69,8 @@
     
  }
  
- 
- extension LeagueViewController: LeagueCollectionViewCellDelegate {
-    func didTapButton(leauge: League) {
-        
-        for team in leauge.teams {
-            print("Team name: \(team.name)")
-        }
-        let vc =  TeamsViewController(team: leauge.teams,leagueViewModel: leagueViewModel)
-        vc.modalPresentationStyle = .fullScreen
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
     
- }
+ 
  
  
  

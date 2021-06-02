@@ -31,6 +31,8 @@ enum TeamType {
     case AthleticBilbao
     case AtléticoMadrid
     case Barcelona
+    case PSG
+    case Juventus
 }
 
 enum ManagerType {
@@ -57,6 +59,8 @@ enum ManagerType {
     case Marcelino
     case DiegoSimeone
     case RonaldKoeman
+    case Mauricio
+    case Allegri
 }
  
 extension ManagerType{
@@ -109,6 +113,10 @@ var managerImage: UIImage {
         return UIImage(named: "DiegoSimeone")!
     case .RonaldKoeman:
         return UIImage(named: "RonaldKoeman")!
+    case .Mauricio:
+        return UIImage(named: "Mauricio")!
+    case .Allegri:
+        return UIImage(named: "Allegri")!
     }
  }
 }
@@ -163,6 +171,10 @@ extension TeamType {
             return UIImage(named: "atletico_madrid_ic")!
         case .Barcelona:
             return UIImage(named: "barcelona_ic")!
+        case .PSG:
+            return UIImage(named: "psg_ic")!
+        case .Juventus:
+            return UIImage(named: "juventus_ic")!
         }
     }
     
@@ -214,6 +226,10 @@ extension TeamType {
             return "Wanda Metropolitano"
         case .Barcelona:
             return "Camp Nou"
+        case .PSG:
+            return "Parc des Princes"
+        case .Juventus:
+            return "Juventus Stadium"
         }
     }
     
@@ -266,6 +282,10 @@ extension TeamType {
             return UIColor(named: "AtleticoMadrid_bg")!
         case .Barcelona:
             return UIColor(named: "Barcelona_bg")!
+        case .PSG:
+            return UIColor(named: "psg_bg")!
+        case .Juventus:
+            return UIColor(named: "juventus_bg")!
         }
     }
     
@@ -319,6 +339,10 @@ extension TeamType {
             return "atlético_madrid"
         case .Barcelona:
             return "barcelona"
+        case .PSG:
+            return "PSG"
+        case .Juventus:
+            return "Juventus"
         }
     }
 }

@@ -6,15 +6,11 @@
 //
 
 import UIKit
-
-protocol LeagueCollectionViewCellDelegate: AnyObject {
-    func didTapButton(leauge: League)
-}
+ 
 
 class LeagueCollectionViewCell: UICollectionViewCell {
     
     static let cellID = "ClubCollectionViewCell"
-    private weak var delegate: LeagueCollectionViewCellDelegate?
     private var league: League?
     private var indexPath:IndexPath?
     
@@ -60,8 +56,7 @@ class LeagueCollectionViewCell: UICollectionViewCell {
 // MARK: - UI Setup
 extension LeagueCollectionViewCell {
     
-    func configure(league: League, delegate: LeagueCollectionViewCellDelegate) {
-        self.delegate = delegate
+    func configure(league: League) {
         self.league = league
         img.image = league.image
         titleLabel.text = league.name
@@ -69,23 +64,11 @@ extension LeagueCollectionViewCell {
         setupUI()
     }
     
-    
-    @objc func showScreen(){
-        if let val = league {
-
-            delegate?.didTapButton(leauge: val)
-        }
-     }
-    
     private func setupUI() {
         self.contentView.addSubview(roundedBackgroundView)
         roundedBackgroundView.addSubview(img)
         roundedBackgroundView.addSubview(titleLabel)
-        roundedBackgroundView.addSubview(button)
-
-        button.addTarget(self, action: #selector(showScreen), for: .touchUpInside)
-
-        
+ 
         NSLayoutConstraint.activate([
             roundedBackgroundView.topAnchor.constraint(equalTo:  contentView.topAnchor,constant: 8),
             roundedBackgroundView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
@@ -100,13 +83,7 @@ extension LeagueCollectionViewCell {
             img.topAnchor.constraint(equalTo: titleLabel.bottomAnchor,constant: 20),
             img.leadingAnchor.constraint(equalTo: roundedBackgroundView.leadingAnchor,constant: 10),
             img.trailingAnchor.constraint(equalTo: roundedBackgroundView.trailingAnchor,constant: -10),
-            
-            button.topAnchor.constraint(equalTo: img.bottomAnchor,constant: 20),
-            button.leadingAnchor.constraint(equalTo: roundedBackgroundView.leadingAnchor,constant: 40),
-            button.trailingAnchor.constraint(equalTo: roundedBackgroundView.trailingAnchor,constant: -40),
-            
-            button.bottomAnchor.constraint(equalTo: roundedBackgroundView.bottomAnchor,constant: -20),
-            button.heightAnchor.constraint(equalToConstant: 40)
+            img.bottomAnchor.constraint(equalTo: roundedBackgroundView.bottomAnchor,constant: -20)
         ])
         
     }
