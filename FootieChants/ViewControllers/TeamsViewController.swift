@@ -52,7 +52,7 @@ extension TeamsViewController {
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
         
-        view.backgroundColor = .white
+        view.backgroundColor = Colour.background
         
         tableView.dataSource = self
         
