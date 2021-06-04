@@ -126,7 +126,7 @@ extension TeamTableViewCell {
         
         
         containerVw.backgroundColor = team.id.background
-        badgeImgVw.image = team.id.PremierLeagueBadge
+        badgeImgVw.image = team.id.badge
         managerImgVw.image = team.manager.managerID.managerImage
         playBackBtn.setImage(team.isPlaying ? Assets.pause : Assets.play, for: .normal)
         nameLabel.text = team.name

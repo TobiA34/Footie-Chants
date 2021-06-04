@@ -48,8 +48,16 @@
 		BD22467F2667C33400AD4367 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2246592667C33400AD4367 /* Colour.swift */; };
 		BD2246802667C33400AD4367 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD22465A2667C33400AD4367 /* Team.swift */; };
 		BD2246812667C33400AD4367 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD22465B2667C33400AD4367 /* League.swift */; };
-		BD2246832667D1BC00AD4367 /* PSG.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD2246822667D1BC00AD4367 /* PSG.mp3 */; };
 		BD2246852667D1C200AD4367 /* Juventus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD2246842667D1C200AD4367 /* Juventus.mp3 */; };
+		BDBA5D94266A27810036FB39 /* Bordeaux.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BDBA5D8E266A27800036FB39 /* Bordeaux.mp3 */; };
+		BDBA5D95266A27810036FB39 /* Brest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BDBA5D8F266A27800036FB39 /* Brest.mp3 */; };
+		BDBA5D96266A27810036FB39 /* Lens.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BDBA5D90266A27800036FB39 /* Lens.mp3 */; };
+		BDBA5D97266A27810036FB39 /* Dijon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BDBA5D91266A27810036FB39 /* Dijon.mp3 */; };
+		BDBA5D98266A27810036FB39 /* PSG.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BDBA5D92266A27810036FB39 /* PSG.mp3 */; };
+		BDBA5D99266A27810036FB39 /* Angers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BDBA5D93266A27810036FB39 /* Angers.mp3 */; };
+		BDBA5D9D266A37610036FB39 /* Atalanta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BDBA5D9A266A37610036FB39 /* Atalanta.mp3 */; };
+		BDBA5D9E266A37610036FB39 /* Internazionale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BDBA5D9B266A37610036FB39 /* Internazionale.mp3 */; };
+		BDBA5D9F266A37610036FB39 /* Milan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BDBA5D9C266A37610036FB39 /* Milan.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,8 +104,16 @@
 		BD2246592667C33400AD4367 /* Colour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colour.swift; sourceTree = "<group>"; };
 		BD22465A2667C33400AD4367 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		BD22465B2667C33400AD4367 /* League.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
-		BD2246822667D1BC00AD4367 /* PSG.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PSG.mp3; sourceTree = "<group>"; };
 		BD2246842667D1C200AD4367 /* Juventus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Juventus.mp3; sourceTree = "<group>"; };
+		BDBA5D8E266A27800036FB39 /* Bordeaux.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bordeaux.mp3; sourceTree = "<group>"; };
+		BDBA5D8F266A27800036FB39 /* Brest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Brest.mp3; sourceTree = "<group>"; };
+		BDBA5D90266A27800036FB39 /* Lens.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Lens.mp3; sourceTree = "<group>"; };
+		BDBA5D91266A27810036FB39 /* Dijon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dijon.mp3; sourceTree = "<group>"; };
+		BDBA5D92266A27810036FB39 /* PSG.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = PSG.mp3; path = ../../../../../../../../Downloads/Ligue1Chants/PSG.mp3; sourceTree = "<group>"; };
+		BDBA5D93266A27810036FB39 /* Angers.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Angers.mp3; sourceTree = "<group>"; };
+		BDBA5D9A266A37610036FB39 /* Atalanta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Atalanta.mp3; sourceTree = "<group>"; };
+		BDBA5D9B266A37610036FB39 /* Internazionale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Internazionale.mp3; sourceTree = "<group>"; };
+		BDBA5D9C266A37610036FB39 /* Milan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Milan.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +174,16 @@
 		BD22462F2667C33300AD4367 /* Chants */ = {
 			isa = PBXGroup;
 			children = (
+				BDBA5D9A266A37610036FB39 /* Atalanta.mp3 */,
+				BDBA5D9B266A37610036FB39 /* Internazionale.mp3 */,
+				BDBA5D9C266A37610036FB39 /* Milan.mp3 */,
+				BDBA5D93266A27810036FB39 /* Angers.mp3 */,
+				BDBA5D8E266A27800036FB39 /* Bordeaux.mp3 */,
+				BDBA5D8F266A27800036FB39 /* Brest.mp3 */,
+				BDBA5D91266A27810036FB39 /* Dijon.mp3 */,
+				BDBA5D90266A27800036FB39 /* Lens.mp3 */,
+				BDBA5D92266A27810036FB39 /* PSG.mp3 */,
 				BD2246842667D1C200AD4367 /* Juventus.mp3 */,
-				BD2246822667D1BC00AD4367 /* PSG.mp3 */,
 				BD2246302667C33300AD4367 /* athletic_bilbao.mp3 */,
 				BD2246312667C33300AD4367 /* burnley.mp3 */,
 				BD2246322667C33300AD4367 /* newcastle.mp3 */,
@@ -316,12 +340,18 @@
 				BD2246692667C33400AD4367 /* leeds.mp3 in Resources */,
 				BD2246682667C33400AD4367 /* chelsea.mp3 in Resources */,
 				BD2246622667C33400AD4367 /* west_brom.mp3 in Resources */,
-				BD2246832667D1BC00AD4367 /* PSG.mp3 in Resources */,
 				BD22466B2667C33400AD4367 /* tottenham.mp3 in Resources */,
+				BDBA5D9F266A37610036FB39 /* Milan.mp3 in Resources */,
 				BD2246852667D1C200AD4367 /* Juventus.mp3 in Resources */,
+				BDBA5D96266A27810036FB39 /* Lens.mp3 in Resources */,
+				BDBA5D95266A27810036FB39 /* Brest.mp3 in Resources */,
 				BD2246722667C33400AD4367 /* arsenal.mp3 in Resources */,
+				BDBA5D98266A27810036FB39 /* PSG.mp3 in Resources */,
+				BDBA5D9E266A37610036FB39 /* Internazionale.mp3 in Resources */,
 				BD2246632667C33400AD4367 /* wolves.mp3 in Resources */,
 				BD2246732667C33400AD4367 /* everton.mp3 in Resources */,
+				BDBA5D9D266A37610036FB39 /* Atalanta.mp3 in Resources */,
+				BDBA5D99266A27810036FB39 /* Angers.mp3 in Resources */,
 				BD22466F2667C33400AD4367 /* leicester.mp3 in Resources */,
 				BD22465E2667C33400AD4367 /* burnley.mp3 in Resources */,
 				BD2246712667C33400AD4367 /* manchester_united.mp3 in Resources */,
@@ -330,7 +360,9 @@
 				BD22466D2667C33400AD4367 /* atlético_madrid.mp3 in Resources */,
 				BD22465F2667C33400AD4367 /* newcastle.mp3 in Resources */,
 				BD22466A2667C33400AD4367 /* palace.mp3 in Resources */,
+				BDBA5D97266A27810036FB39 /* Dijon.mp3 in Resources */,
 				BD2246612667C33400AD4367 /* sheffield.mp3 in Resources */,
+				BDBA5D94266A27810036FB39 /* Bordeaux.mp3 in Resources */,
 				BD22465D2667C33400AD4367 /* athletic_bilbao.mp3 in Resources */,
 				BD2246652667C33400AD4367 /* liverpool.mp3 in Resources */,
 				BD2246662667C33400AD4367 /* fulham.mp3 in Resources */,

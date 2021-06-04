@@ -31,8 +31,16 @@ enum TeamType {
     case AthleticBilbao
     case AtléticoMadrid
     case Barcelona
+    case Angers
+    case Bordeaux
+    case Brest
+    case Dijon
+    case Lens
     case PSG
     case Juventus
+    case Atalanta
+    case Internazionale
+    case Milan
 }
 
 enum ManagerType {
@@ -60,7 +68,16 @@ enum ManagerType {
     case DiegoSimeone
     case RonaldKoeman
     case Mauricio
+    case DavidLinarès
+    case FranckHaise
+    case GéraldBaticle
+    case JeanLouisGasset
+    case OlivierDallOglio
     case Allegri
+    case GianPieroGasperini
+    case SimoneInzaghi
+    case StefanoPioli
+
 }
  
 extension ManagerType{
@@ -115,14 +132,35 @@ var managerImage: UIImage {
         return UIImage(named: "RonaldKoeman")!
     case .Mauricio:
         return UIImage(named: "Mauricio")!
+    
+    case .DavidLinarès:
+        return UIImage(named: "DavidLinarès")!
+
+    case .FranckHaise:
+        return UIImage(named: "FranckHaise")!
+
+    case .GéraldBaticle:
+        return UIImage(named: "GéraldBaticle")!
+
+    case .JeanLouisGasset:
+        return UIImage(named: "JeanLouisGasset")!
+
+    case .OlivierDallOglio:
+        return UIImage(named: "OlivierDallOglio")!
     case .Allegri:
         return UIImage(named: "Allegri")!
+    case .GianPieroGasperini:
+        return UIImage(named: "GianPieroGasperini")!
+    case .SimoneInzaghi:
+        return UIImage(named: "SimoneInzaghi")!
+    case .StefanoPioli:
+        return UIImage(named: "StefanoPioli")!
     }
  }
 }
  
 extension TeamType {
-    var PremierLeagueBadge: UIImage {
+    var badge: UIImage {
         switch self {
 
         case .arsenal:
@@ -171,10 +209,31 @@ extension TeamType {
             return UIImage(named: "atletico_madrid_ic")!
         case .Barcelona:
             return UIImage(named: "barcelona_ic")!
-        case .PSG:
-            return UIImage(named: "psg_ic")!
         case .Juventus:
             return UIImage(named: "juventus_ic")!
+
+        case .Angers:
+            return UIImage(named: "angers_ic")!
+
+        case .Bordeaux:
+            return UIImage(named: "bordeaux_ic")!
+
+        case .Brest:
+            return UIImage(named: "brest_ic")!
+
+        case .Dijon:
+            return UIImage(named: "dijon_ic")!
+        case .PSG:
+            return UIImage(named: "psg_ic")!
+        case .Lens:
+            return UIImage(named: "lens_ic")!
+
+        case .Atalanta:
+            return UIImage(named: "atalanta_ic")!
+        case .Internazionale:
+            return UIImage(named: "internazionale_ic")!
+        case .Milan:
+            return UIImage(named: "milan_ic")!
         }
     }
     
@@ -226,10 +285,29 @@ extension TeamType {
             return "Wanda Metropolitano"
         case .Barcelona:
             return "Camp Nou"
-        case .PSG:
-            return "Parc des Princes"
         case .Juventus:
             return "Juventus Stadium"
+        case .PSG:
+            return "Parc des Princes"
+        case .Angers:
+            return "Stade Jean Bouin"
+        case .Bordeaux:
+            return "Matmut Atlantique"
+
+        case .Brest:
+            return "Stade Francis-Le Ble"
+
+        case .Dijon:
+            return "Stade Gaston-Gerard"
+
+        case .Lens:
+            return "Stade Bollaert-Delelis"
+        case .Atalanta:
+            return "Gewiss Stadium"
+        case .Internazionale:
+            return "San Siro Stadium"
+        case .Milan:
+            return "San Siro Stadium"
         }
     }
     
@@ -286,6 +364,22 @@ extension TeamType {
             return UIColor(named: "psg_bg")!
         case .Juventus:
             return UIColor(named: "juventus_bg")!
+        case .Angers:
+            return UIColor(named: "angers_bg")!
+        case .Bordeaux:
+            return UIColor(named: "bordeaux_bg")!
+        case .Brest:
+            return UIColor(named: "brest_bg")!
+        case .Dijon:
+            return UIColor(named: "dijon_bg")!
+        case .Lens:
+            return UIColor(named: "lens_bg")!
+        case .Atalanta:
+            return UIColor(named: "atalanta_bg")!
+        case .Internazionale:
+            return UIColor(named: "internazionale_bg")!
+        case .Milan:
+            return UIColor(named: "milan_bg")!
         }
     }
     
@@ -343,6 +437,25 @@ extension TeamType {
             return "PSG"
         case .Juventus:
             return "Juventus"
+        case .Angers:
+            return "Angers"
+        case .Bordeaux:
+            return "Bordeaux"
+        case .Brest:
+            return "Brest"
+
+        case .Dijon:
+            return "Dijon"
+
+        case .Lens:
+            return "Lens"
+
+        case .Atalanta:
+            return "Atalanta"
+        case .Internazionale:
+            return "Internazionale"
+        case .Milan:
+            return "Milan"
         }
     }
 }
