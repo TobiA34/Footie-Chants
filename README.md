@@ -2,7 +2,7 @@
 
 ![footie-chants-logo](https://user-images.githubusercontent.com/36420903/119168278-a8fd6800-ba58-11eb-8f38-2d3ba1971bff.png)
 
-An app which allows you to set life goals and  it also allows you to complete the goals.
+An app that allows you to listen to football chants.
 
 ## Table of contents
 * [MVVM](#MVVM)
