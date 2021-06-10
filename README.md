@@ -1,6 +1,6 @@
 # Footie Chants
 
-![footie-chants-logo](https://user-images.githubusercontent.com/36420903/119168278-a8fd6800-ba58-11eb-8f38-2d3ba1971bff.png)
+![goalLogo](https://user-images.githubusercontent.com/36420903/121552089-15400b80-ca08-11eb-86a8-06967ba2c2f0.png)
 
 An app that allows you to listen to football chants.
 
@@ -14,7 +14,6 @@ An app that allows you to listen to football chants.
 
 # ScreenShots
  ![Footie-screenshot](https://user-images.githubusercontent.com/36420903/119168857-43f64200-ba59-11eb-9494-5434b5d1bc6b.png)
-
 
  ---
 #### MVVM
